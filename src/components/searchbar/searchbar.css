@@ -1,0 +1,39 @@
+.searchBar {
+    height: 30px;
+    background-color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 3rem 0;
+    width: 100%;
+    max-width: 1024px;
+    margin: auto;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 10px 10px -1px;
+}
+
+.searchBarItem p {
+    color: var(--greyText);
+}
+
+.searchBarGrid {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    gap: 9rem;
+}
+
+.searchBarText {
+    color: var(--blue);
+}
+
+.destinationContainer {
+    position: absolute;
+    top: 6rem;
+}
+
+.destinationItem {
+    display: flex;
+    padding: 1rem;
+    width: 100%;
+    justify-content: space-between;
+}
