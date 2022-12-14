@@ -1,0 +1,108 @@
+body {
+    margin: 20px 0;
+    padding: 0;
+    line-height: 1;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    color: #202020;
+    background-color: #fbfbfb;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.dd-container {
+    /* height: auto; */
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1rem;
+    padding-right: 1rem;
+    max-width: 1140px;
+    width: 100%;
+    margin: auto;
+    background-color: var(--white);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 10px 10px -1px;
+}
+
+
+/* DROPDOWN
+   ============================================ */
+
+.dd-wrapper {
+    display: flex;
+    min-height: 38px;
+    flex-wrap: wrap;
+    max-width: 1140px;
+    /* min-width: fit-content; */
+    width: 100%;
+    /* max-width: 250px;
+    min-width: 250px; */
+    margin: auto;
+    background-color: var(--white);
+    /* box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 10px 10px -1px; */
+}
+
+.dd-wrapper-title {
+    color: var(--greyText);
+    text-transform: uppercase;
+    font-size: 10px;
+    padding: 5px 20px 5px 20px;
+}
+
+.dd-header-title-text {
+    color: var(--blue);
+}
+
+.dd-header {
+    background-color: var(--white);
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    width: 100%;
+    padding: 0 20px 20px;
+}
+
+.dd-header-action p {
+    color: var(--blue);
+}
+
+.dd-list {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.dd-list li {
+    list-style-type: none;
+}
+
+.dd-list-item-button {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--white);
+    font-size: 16px;
+    padding: 15px 20px 15px 20px;
+    border: 0;
+    width: 100%;
+    text-align: left;
+}
+
+.dd-list-item-button:hover {
+    cursor: pointer;
+    background-color: var(--lightBlue);
+}
+
+.dd-list-item-button-selected {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    padding: 15px 20px 15px 20px;
+    border: 0;
+    width: 100%;
+    text-align: left;
+    background-color: var(--lightBlue);
+}
+
+.dd-list-item-span {
+    color: var(--blue);
+}

@@ -1,5 +1,6 @@
 import React from "react";
 import "./searchbar.css";
+import { destinationList } from "../dropdownDestination/destinationList";
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 import { BiCalendar } from "react-icons/bi";
 import { useState } from "react";
@@ -11,19 +12,26 @@ const SearchBar = () => {
   return (
     <>
       <div className="searchBar">
-        <div className="searchBarItem">
+        <div className="searchBarItem" onClick={()=>setOpenDestination(!openDestination)}>
           <p>Cruising to</p>
           <div className="searchBarGrid">
-            <span 
-            className="searchBarText">{destination}</span>
+            <span  className="searchBarText">{destination}</span>
             <MdOutlineKeyboardArrowDown className="icon" />
           </div>
-          <div className="destinationContainer">
-            <button className="destinationItem btn-secondary" value={destination}>Alaska</button>
-            <button className="destinationItem btn-secondary">Bahamas</button>
-            <button className="destinationItem btn-secondary">Bermuda</button>
-            <button className="destinationItem btn-secondary">Cuba</button>
-          </div>
+          {openDestination && <div className="destinationContainer">
+            {destinationList.map((dest) => (
+              <button
+                key={dest.id}
+                className="destinationItem btn-secondary"
+                onClick={() => {
+                  setDestination(dest.value);
+                }}
+                value={dest.value}
+              >
+                {dest.value}
+              </button>
+            ))}
+          </div>}
         </div>
         <div className="searchBarItem">
           <p>Departure from</p>
