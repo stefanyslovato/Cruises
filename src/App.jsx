@@ -1,5 +1,6 @@
 import './App.css';
 import SearchBarCruises from './components/searchBarCruises/searchBarCruises';
+import SearchBar from './components/searchbar/SearchBar';
 
 
 

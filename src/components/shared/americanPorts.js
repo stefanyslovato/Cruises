@@ -1,4 +1,4 @@
-export const portListAmerica = [{
+export const americanPorts = [{
         id: 1,
         value: "Baltimore, Maryland"
     },
